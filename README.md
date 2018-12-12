@@ -44,7 +44,7 @@ That's it, really. Below is information about the data sources and the versioned
 If you are publishing a paper with this library, or you want the results of your analysis to be reproducable for any other reason, include the version number in your call to lookup table. This will always pull the specific version of the taxonomy lookup that you used. If you leave this out, on a new machine the library will download the most recent version of the database rather than the specific one that you used.
 
 ``` r
-growth_form_lookup_table(c("Pinus ponderosa", "Quercus agrifolia"))
+growth_form_lookup_table(c("Pinus ponderosa", "Quercus agrifolia"),version="0.1.0")
 ```
 
     ##                       sp support plant.list.accepted
