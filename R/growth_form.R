@@ -34,7 +34,7 @@ growth_form <- function(version=NULL) {
 ##   2. the file to download growth_form.csv)
 ##   3. the function to read the file, given a filename (read_csv)
 growth_form_info <- function() {
-  github_release_storr_info("cornwell-lab-unsw/growthformdatabase",
+  datastorr::github_release_info("traitecoevo/global_plant_growth_form",
                             "growth_form.csv",
                             read_csv)
 }
@@ -42,8 +42,8 @@ growth_form_info <- function() {
 ## Below here are wrappers around the storr functions but with our
 ## information object.  We could actually save growth_form_info() as
 ## an *object* in the package, but I prefer this approach.
-growth_form_get <- function(version=NULL) {
-  github_release_storr_get(growth_form_info(), version)
+growth_form_get <- function(version=NULL, path=NULL) {
+  github_release_storr_get(growth_form_info(path), version)
 }
 
 ##' @export
@@ -54,22 +54,55 @@ growth_form_get <- function(version=NULL) {
 ##'   \code{growth_form_version_current}, if "local" is given, but there
 ##'   are no local versions, then we do check for the most recent
 ##'   github version.
-growth_form_versions <- function(type="local") {
-  github_release_storr_versions(growth_form_info(), type)
+
+growth_form_versions <- function(local=TRUE, path=NULL) {
+  datastorr::github_release_get(growth_form_info(path), local)
 }
 
 ##' @export
 ##' @rdname growth_form
-growth_form_version_current <- function(type="local") {
-  github_release_storr_version_current(growth_form_info(), type)
+growth_form_version_current_local <- function(type="local",local=TRUE) {
+  datastorr::github_release_version_current(growth_form_info(path), local=local
 }
 
 ##' @export
-##' @rdname growth_form
-growth_form_del <- function(version) {
-  github_release_storr_del(growth_form_info(), version)
+##' @rdname plant_lookup
+growth_form_version_current_github <- function(path=NULL) {
+  datastorr::github_release_version_current(growth_form_info(path), local=FALSE)
+}
+
+##' @export
+##' @rdname plant_lookup
+get_most_recent_growth_form <- function(path=NULL){
+  datastorr::github_release_get(info=growth_form_info(path)
+                                  , version=growth_form_version_current_github())
+}
+
+
+##' @export
+##' @rdname plant_lookup
+growth_form_del <- function(version, path=NULL) {
+  datastorr::github_release_del(growth_form_info(path), version)
 }
 
 read_csv <- function(...) {
-  read.csv(..., stringsAsFactors=FALSE)
+  utils::read.csv(..., stringsAsFactors=FALSE)
 }
+
+growth_form_release <- function(description, path=NULL, ...) {
+  datastorr::github_release_create(growth_form_info(path),
+                                   description=description, ...)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
