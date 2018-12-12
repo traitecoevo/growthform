@@ -4,13 +4,19 @@
 \alias{growth_form_lookup_table}
 \title{Build a lookup table for a set of species, connecting the species names to growth form}
 \usage{
-growth_form_lookup_table(species_list, lookup_table = NULL)
+growth_form_lookup_table(species_list, lookup_table = NULL, version = NULL)
 }
 \arguments{
 \item{species_list}{Character vector of species bionomials  Genus and species may be seperated by  " "
 or "_"}
 
 \item{lookup_table}{Any growth form lookup table, but by default \code{\link{growth_form}}}
+
+\item{version}{Version number.  The default will load the most
+recent version on your computer or the most recent version known
+to the package if you have never downloaded the data before.
+With \code{growth_form_del}, specifying \code{version=NULL}
+will delete \emph{all} data sets.}
 }
 \description{
 Build a lookup table for a set of species, connecting the species names to growth form
