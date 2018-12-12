@@ -1,11 +1,12 @@
-language: r
+language: R
+sudo: false
+cache: packages
 
 r_github_packages:
   - ropenscilabs/datastorr
   - jimhester/covr
 
 after_success:
-  - Rscript -e 'library(covr); coveralls()'
   - Rscript -e 'library(covr); codecov()'
 
 after_failure:

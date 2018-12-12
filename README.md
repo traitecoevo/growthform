@@ -20,12 +20,17 @@ library(growthform)
 
 ### Find the growth form for your species list
 
+Once the package is installed, this can be done with one line of code.
+
 ``` r
-growth_form_lookup_table(c("Pinus ponderosa","Quercus agrifolia","Clematis lasiantha","Hedera helix","Aechmea cylindrata","Ficus tremula","Amyema bifurcata","Sciaphila khasiana","Najas flexilis"))
+growth_form_lookup_table(c("Pinus ponderosa","Quercus agrifolia",
+                           "Clematis lasiantha","Hedera helix","
+                           Aechmea cylindrata","Ficus tremula",
+                           "Amyema bifurcata","Sciaphila khasiana",
+                           "Najas flexilis"))
 ```
 
     ##                        sp support plant.list.accepted
-    ## 3272   Aechmea cylindrata       E                TRUE
     ## 8255     Amyema bifurcata       P                TRUE
     ## 32005  Clematis lasiantha       C                TRUE
     ## 61155       Ficus tremula       H                TRUE
@@ -35,11 +40,11 @@ growth_form_lookup_table(c("Pinus ponderosa","Quercus agrifolia","Clematis lasia
     ## 115069  Quercus agrifolia       F                TRUE
     ## 122217 Sciaphila khasiana       M                TRUE
 
-"F"" is for free standing; "C" is for climber; "E" is for epiphyte, "P" is for parasite; "M" is for (holo)-mycoheterotroph; "A" is for aquatic; and "H" is for hemiepiphyte.
+"F" is for free standing; "C" is for climber; "E" is for epiphyte, "P" is for parasite; "M" is for (holo)-mycoheterotroph; "A" is for aquatic; and "H" is for hemiepiphyte.
 
 If you are looking for a woody versus non-woody split check [here](https://datadryad.org/resource/doi:10.5061/dryad.63q27).
 
-If you want tree versus shrubs, \[others have tackled that problem)\[<https://www.bbc.com/news/science-environment-39492977>\].
+If you want a tree versus shrub split, [others have tackled that difficult problem](https://www.bbc.com/news/science-environment-39492977).
 
 That's it, really. Below is information about the data sources and the versioned data distribution system (which we think is really cool), feel free to check it out, but you don't need to read the rest of this to use the package.
 
@@ -60,7 +65,7 @@ growth_form_lookup_table(c("Pinus ponderosa", "Quercus agrifolia"),version="0.1.
 Data sources
 ------------
 
-Too many to list here. Check [here](https://github.com/traitecoevo/growthform/tree/master/database_assembly_information/original_references)
+All this relies on the botanists that orginially classified these species in the field, but unfortunately they are too many to list here. Check [here](https://github.com/traitecoevo/growthform/tree/master/database_assembly_information/original_references) for a complete list of where these data come from.
 
 Details about the data distribution system
 ------------------------------------------
