@@ -1,5 +1,5 @@
-Package: globalPlantGrowthForm
-Title: A dynamically-updating versioned growth form data for vascular plants
+Package: gpgf
+Title: Global Plant Growth Form: a dynamically-updating versioned growth form data for vascular plants
 Version: 0.1.0
 Description: A growth form database for >145,000 species of vascular plants.
 BugReports: https://github.com/traitecoevo/global_plant_growth_form/issues

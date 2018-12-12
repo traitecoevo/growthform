@@ -62,7 +62,7 @@ growth_form_versions <- function(local=TRUE, path=NULL) {
 ##' @export
 ##' @rdname growth_form
 growth_form_version_current_local <- function(type="local",local=TRUE) {
-  datastorr::github_release_version_current(growth_form_info(path), local=local
+  datastorr::github_release_version_current(growth_form_info(path), local=local)
 }
 
 ##' @export
