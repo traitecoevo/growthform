@@ -43,7 +43,7 @@ growth_form_info <- function() {
 ## information object.  We could actually save growth_form_info() as
 ## an *object* in the package, but I prefer this approach.
 growth_form_get <- function(version=NULL, path=NULL) {
-  github_release_storr_get(growth_form_info(path), version)
+  github_release_storr_get(growth_form_info(), version)
 }
 
 ##' @export
@@ -55,42 +55,42 @@ growth_form_get <- function(version=NULL, path=NULL) {
 ##'   are no local versions, then we do check for the most recent
 ##'   github version.
 
-growth_form_versions <- function(local=TRUE, path=NULL) {
-  datastorr::github_release_get(growth_form_info(path), local)
+growth_form_versions <- function(local=TRUE) {
+  datastorr::github_release_get(growth_form_info(), local)
 }
 
 ##' @export
 ##' @rdname growth_form
 growth_form_version_current_local <- function(type="local",local=TRUE) {
-  datastorr::github_release_version_current(growth_form_info(path), local=local)
+  datastorr::github_release_version_current(growth_form_info(), local=local)
 }
 
 ##' @export
 ##' @rdname plant_lookup
 growth_form_version_current_github <- function(path=NULL) {
-  datastorr::github_release_version_current(growth_form_info(path), local=FALSE)
+  datastorr::github_release_version_current(growth_form_info(), local=FALSE)
 }
 
 ##' @export
 ##' @rdname plant_lookup
-get_most_recent_growth_form <- function(path=NULL){
-  datastorr::github_release_get(info=growth_form_info(path)
+get_most_recent_growth_form <- function(){
+  datastorr::github_release_get(info=growth_form_info()
                                   , version=growth_form_version_current_github())
 }
 
 
 ##' @export
 ##' @rdname plant_lookup
-growth_form_del <- function(version, path=NULL) {
-  datastorr::github_release_del(growth_form_info(path), version)
+growth_form_del <- function(version) {
+  datastorr::github_release_del(growth_form_info(), version)
 }
 
 read_csv <- function(...) {
   utils::read.csv(..., stringsAsFactors=FALSE)
 }
 
-growth_form_release <- function(description, path=NULL, ...) {
-  datastorr::github_release_create(growth_form_info(path),
+growth_form_release <- function(description,  ...) {
+  datastorr::github_release_create(growth_form_info(),
                                    description=description, ...)
 }
 
