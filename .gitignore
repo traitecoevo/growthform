@@ -5,7 +5,6 @@
 conflicts.csv
 new_fixes.csv
 .Rapp.history
-.Rbuildignore
 
 *.DS_Store
 rawData/.DS_Store
