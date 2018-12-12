@@ -42,8 +42,8 @@ growth_form_info <- function() {
 ## Below here are wrappers around the storr functions but with our
 ## information object.  We could actually save growth_form_info() as
 ## an *object* in the package, but I prefer this approach.
-growth_form_get <- function(version=NULL, path=NULL) {
-  github_release_storr_get(growth_form_info(), version)
+growth_form_get <- function(version=NULL) {
+  datastorr::github_release_get(growth_form_info(), version)
 }
 
 ##' @export
