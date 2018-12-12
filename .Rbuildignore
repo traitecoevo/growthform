@@ -11,3 +11,4 @@
 ^\.remake$
 ^README\.rmd$
 ^growth_form\.csv$
+^database_assembly_information$

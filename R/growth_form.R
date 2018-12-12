@@ -48,7 +48,7 @@ growth_form_get <- function(version=NULL) {
 
 ##' @export
 ##' @rdname growth_form
-##' @param type Type of version to return: options are "local"
+##' @param local Type of version to return: options are "local"
 ##'   (versions installed locally) or "github" (versions available on
 ##'   github).  With any luck, "github" is a superset of "local".  For
 ##'   \code{growth_form_version_current}, if "local" is given, but there

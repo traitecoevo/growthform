@@ -28,7 +28,7 @@ to the package if you have never downloaded the data before.
 With \code{growth_form_del}, specifying \code{version=NULL}
 will delete \emph{all} data sets.}
 
-\item{type}{Type of version to return: options are "local"
+\item{local}{Type of version to return: options are "local"
 (versions installed locally) or "github" (versions available on
 github).  With any luck, "github" is a superset of "local".  For
 \code{growth_form_version_current}, if "local" is given, but there

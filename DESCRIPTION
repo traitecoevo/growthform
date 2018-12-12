@@ -4,7 +4,7 @@ Version: 0.1.0
 Description: A growth form database for >145,000 species of vascular plants.
 BugReports: https://github.com/traitecoevo/global_plant_growth_form/issues
 Depends: R (>= 3.1.0)
-License: MIT + file LICE/Users/willcornwell/Documents/taxonlookup/R/plant_lookup.RNSE
+License: MIT + file LICENSE
 LazyData: true
 Authors@R: as.person(c("Will Cornwell <wcornwell@gmail.com> [aut, cre]"))
 Maintainer: Will Cornwell <wcornwell@gmail.com>
