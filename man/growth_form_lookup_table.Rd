@@ -4,24 +4,13 @@
 \alias{growth_form_lookup_table}
 \title{Build a lookup table for a set of species, connecting the species names to growth form}
 \usage{
-growth_form_lookup_table(species_list, lookup_table = NULL,
-  genus_column = "genus", missing_action = c("drop", "NA", "error"))
+growth_form_lookup_table(species_list, lookup_table = NULL)
 }
 \arguments{
 \item{species_list}{Character vector of species bionomials  Genus and species may be seperated by  " "
 or "_"}
 
 \item{lookup_table}{Any growth form lookup table, but by default \code{\link{growth_form}}}
-
-\item{genus_column}{The column within \code{lookup_table} that
-corresponds to genus.  By default this is \code{"genus"}, which is
-the correct name for \code{\link{plant_lookup}}.}
-
-\item{missing_action}{How to behave when there are species in the
-\code{species_list} that are not found in the lookup table.
-\code{"drop"} (the default) generates a table without these
-genera, \code{"NA"} will leave the species as
-missing values and \code{error} will throw an error.}
 }
 \description{
 Build a lookup table for a set of species, connecting the species names to growth form

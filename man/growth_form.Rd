@@ -4,13 +4,22 @@
 \alias{growth_form}
 \alias{growth_form_versions}
 \alias{growth_form_version_current_local}
+\alias{growth_form_version_current_github}
+\alias{get_most_recent_growth_form}
+\alias{growth_form_del}
 \title{Plant growthform lookup table}
 \usage{
 growth_form(version = NULL)
 
-growth_form_versions(local = TRUE, path = NULL)
+growth_form_versions(local = TRUE)
 
 growth_form_version_current_local(type = "local", local = TRUE)
+
+growth_form_version_current_github(path = NULL)
+
+get_most_recent_growth_form()
+
+growth_form_del(version)
 }
 \arguments{
 \item{version}{Version number.  The default will load the most

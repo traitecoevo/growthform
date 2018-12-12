@@ -66,13 +66,13 @@ growth_form_version_current_local <- function(type="local",local=TRUE) {
 }
 
 ##' @export
-##' @rdname plant_lookup
+##' @rdname growth_form
 growth_form_version_current_github <- function(path=NULL) {
   datastorr::github_release_version_current(growth_form_info(), local=FALSE)
 }
 
 ##' @export
-##' @rdname plant_lookup
+##' @rdname growth_form
 get_most_recent_growth_form <- function(){
   datastorr::github_release_get(info=growth_form_info()
                                   , version=growth_form_version_current_github())
@@ -80,7 +80,7 @@ get_most_recent_growth_form <- function(){
 
 
 ##' @export
-##' @rdname plant_lookup
+##' @rdname growth_form
 growth_form_del <- function(version) {
   datastorr::github_release_del(growth_form_info(), version)
 }
