@@ -15,7 +15,7 @@
 ##'
 ##'
 ##' @export
-##' @import storr
+##' @import datastorr
 ##' @examples
 ##' #
 ##' # see the format of the resource

@@ -1,4 +1,3 @@
 library(testthat)
-library(taxonlookup)
 
-test_check("taxonlookup")
+test_check("growthform")
