@@ -34,9 +34,9 @@ growth_form <- function(version=NULL) {
 ##   2. the file to download growth_form.csv)
 ##   3. the function to read the file, given a filename (read_csv)
 growth_form_info <- function() {
-  datastorr::github_release_info("traitecoevo/global_plant_growth_form",
-                            "growth_form.csv",
-                            read_csv)
+  datastorr::github_release_info(repo="traitecoevo/global_plant_growth_form",
+                            filename="growth_form.csv",
+                            read=read_csv)
 }
 
 ## Below here are wrappers around the storr functions but with our
