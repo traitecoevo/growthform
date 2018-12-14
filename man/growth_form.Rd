@@ -13,9 +13,9 @@ growth_form(version = NULL)
 
 growth_form_versions(local = TRUE)
 
-growth_form_version_current_local(type = "local", local = TRUE)
+growth_form_version_current_local(local = TRUE)
 
-growth_form_version_current_github(path = NULL)
+growth_form_version_current_github(local = FALSE)
 
 get_most_recent_growth_form()
 

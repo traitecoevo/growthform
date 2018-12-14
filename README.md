@@ -50,7 +50,7 @@ That's it, really. Below is information about the data sources and the versioned
 
 ### Reproducing a specific version
 
-If you are publishing a paper with this library, or you want the results of your analysis to be reproducable for any other reason, include the version number in your call to lookup table. This will always pull the specific version of the taxonomy lookup that you used. If you leave this out, on a new machine the library will download the most recent version of the database rather than the specific one that you used.
+If you are publishing a paper with this library, or you want the results of your analysis to be reproducible for any other reason, include the version number in your call to lookup table. This will always pull the specific version of the taxonomy lookup that you used. If you leave this out, on a new machine the library will download the most recent version of the database rather than the specific one that you used.
 
 ``` r
 growth_form_lookup_table(c("Pinus ponderosa", "Quercus agrifolia"),version="0.1.0")
@@ -72,7 +72,7 @@ Details about the data distribution system
 
 This is designed to be a living database--it will update as taxonomy and data changes (which they always will). These updates will correspond with changes to the version number of this resource, and each version of the database will be available via [Github Releases](http://docs.travis-ci.com/user/deployment/releases/). If you use this resource for published analysis, please note the version number in your publication. This will allow anyone in the future to go back and find **exactly** the same version of the data that you used.
 
-Because Releases can be altered after the fact, we use [zenodo-github integration](https://guides.github.com/activities/citable-code/) to mint a DOI for each release. This will both give a citable DOI and help with the logevity of each version of the database. (Read more about this [here](https://www.software.ac.uk/blog/2016-09-26-making-code-citable-zenodo-and-github).)
+Because Releases can be altered after the fact, we use [zenodo-github integration](https://guides.github.com/activities/citable-code/) to mint a DOI for each release. This will both give a citable DOI and help with the longevity of each version of the database. (Read more about this [here](https://www.software.ac.uk/blog/2016-09-26-making-code-citable-zenodo-and-github).)
 
 ### Details about the data distribution system
 
