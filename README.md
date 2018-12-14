@@ -2,6 +2,8 @@
 growthform: a versioned lookup table for the growth form of vascular plants
 ===========================================================================
 
+[![Build Status](https://travis-ci.org/traitecoevo/growthform.png?branch=master)](https://travis-ci.org/traitecoevo/taxonlookup) [![codecov.io](https://codecov.io/github/traitecoevo/growthform/coverage.svg?branch=master)](https://codecov.io/github/traitecoevo/growthform?branch=master) [![GitHub version](https://badge.fury.io/gh/traitecoevo%2Fgrowthform.svg)](https://badge.fury.io/gh/traitecoevo%2Fgrowthform)
+
 **Problem:** You have a list of species from anywhere in the world. You've fixed the names, but you'd like to know if they are vines or free-standing plants or epiphytes or aquatic plants.
 
 **Solution:** We've put together a growing list of growth forms, currently (&gt;140,000 species). This list lives in this github repository. If you want the whole list, head to [releases and download the whole thing](https://github.com/traitecoevo/growthform/releases). If you want the ones that correspond to your list, load your list into R and follow the steps below.
