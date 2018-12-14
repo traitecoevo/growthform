@@ -1,9 +1,7 @@
 context("growthform")
 
-## Need to do something nice here with testing?
 test_that("lookup sane", {
   library(growthform)
-  lookup <- growthform::growth_form()
   checkingPinus<-growthform::growth_form_lookup_table("Pinus ponderosa")
   expect_that(checkingPinus$sp, equals("Pinus ponderosa"))
   expect_that(checkingPinus$support, equals("F"))

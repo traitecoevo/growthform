@@ -1,6 +1,6 @@
 context("growthform")
 
-## Need to do something nice here with testing?
+
 test_that("table sane", {
   library(growthform)
   lookup <- growthform::growth_form()
@@ -10,15 +10,3 @@ test_that("table sane", {
   expect_that(any(lookup == ""), is_false())
   expect_that(any(duplicated(lookup$sp)), is_false())
 })
-
-# test_that("table sane", {
-#   lookup <- plant_lookup(include_counts=TRUE)
-#   expect_that(ncol(lookup), equals(5L))
-#   expect_that(lookup, is_a("data.frame"))
-#   expect_that(names(lookup),
-#               equals(c("number.of.species",
-#                        "genus", "family", "order", "group")))
-#   expect_that(any(is.na(lookup)), is_false())
-#   expect_that(any(lookup == ""), is_false())
-#   expect_that(any(duplicated(lookup$genus)), is_false())
-# })
