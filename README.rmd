@@ -25,12 +25,12 @@ library(growthform)
 
 ### Find the growth form for your species list
 
-Once the package is installed, this can be done with one line of code.  
+Once the package is installed, this can be done with one line of code, making sure you have nice clean and standard species names with proper capitalization and no extra spaces.  
 
 ```{r, message=FALSE}
 growth_form_lookup_table(c("Pinus ponderosa","Quercus agrifolia",
-                           "Clematis lasiantha","Hedera helix","
-                           Aechmea cylindrata","Ficus tremula",
+                           "Clematis lasiantha","Hedera helix",
+                          "Aechmea cylindrata","Ficus tremula",
                            "Amyema bifurcata","Sciaphila khasiana",
                            "Najas flexilis"))
 ```

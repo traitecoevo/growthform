@@ -22,17 +22,18 @@ library(growthform)
 
 ### Find the growth form for your species list
 
-Once the package is installed, this can be done with one line of code.
+Once the package is installed, this can be done with one line of code, making sure you have nice clean and standard species names with proper capitalization and no extra spaces.
 
 ``` r
 growth_form_lookup_table(c("Pinus ponderosa","Quercus agrifolia",
-                           "Clematis lasiantha","Hedera helix","
-                           Aechmea cylindrata","Ficus tremula",
+                           "Clematis lasiantha","Hedera helix",
+                          "Aechmea cylindrata","Ficus tremula",
                            "Amyema bifurcata","Sciaphila khasiana",
                            "Najas flexilis"))
 ```
 
     ##                        sp support plant.list.accepted
+    ## 3272   Aechmea cylindrata       E                TRUE
     ## 8255     Amyema bifurcata       P                TRUE
     ## 32005  Clematis lasiantha       C                TRUE
     ## 61155       Ficus tremula       H                TRUE
