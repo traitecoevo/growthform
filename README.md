@@ -30,13 +30,13 @@ growth_form_lookup_table(c("Acacia longifolia","Quercus agrifolia",
                           "Ficus tremula","Najas flexilis", "Not a species"))
 ```
 
-    ##                        sp support woodiness nfixing
-    ## 832     Acacia longifolia       F         W     Yes
-    ## 32005  Clematis lasiantha       C         W      No
-    ## 61155       Ficus tremula       H         W    <NA>
-    ## 69515        Hedera helix       C         W      No
-    ## 93956      Najas flexilis       A         H    <NA>
-    ## 115069  Quercus agrifolia       F         W      No
+    ##                   sp support woodiness nfixing
+    ## 1  Acacia longifolia       F         W     Yes
+    ## 2 Clematis lasiantha       C         W      No
+    ## 3      Ficus tremula       H         W    <NA>
+    ## 4       Hedera helix       C         W      No
+    ## 5     Najas flexilis       A         H    <NA>
+    ## 6  Quercus agrifolia       F         W      No
 
 For the `support` column,: "F" is for free standing; "C" is for climber; "E" is for epiphyte, "P" is for parasite; "M" is for (holo)-mycoheterotroph; "A" is for aquatic; and "H" is for hemiepiphyte.
 
@@ -74,9 +74,9 @@ If you are publishing a paper with this library, or you want the results of your
 growth_form_lookup_table(c("Acacia longifolia", "Quercus agrifolia"),version="0.2.1")
 ```
 
-    ##                       sp support woodiness nfixing
-    ## 832    Acacia longifolia       F         W     Yes
-    ## 115069 Quercus agrifolia       F         W      No
+    ##                  sp support woodiness nfixing
+    ## 1 Acacia longifolia       F         W     Yes
+    ## 2 Quercus agrifolia       F         W      No
 
 ------------------------------------------------------------------------
 
