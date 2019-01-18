@@ -97,7 +97,7 @@ We will periodically release development versions of the database using github r
 # Notes for making a release using this *living dataset* design
 
 * Update the `DESCRIPTION` file to **increase** the version number.  Now that we are past version 1.0.0, we will use [semantic versioning](http://semver.org/) so be aware of when to change what number.
-* Run `remake::make()` to rebuild `plant_lookup.csv`
+* Rebuild datafile
 * Commit code changes and `DESCRIPTION` and push to GitHub
 * With R in the package directory, run
 
