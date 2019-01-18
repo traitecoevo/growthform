@@ -19,5 +19,6 @@ growth_form_lookup_table <- function(species_list, lookup_table=NULL,version=NUL
   species_list <- gsub("_"," ",species_list)
      
   out<-lookup_table[lookup_table$sp %in% species_list,]
+  row.names(out)<-NULL
   return(out)
 }
