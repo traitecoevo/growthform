@@ -1,8 +1,6 @@
 language: R
 sudo: false
-dist: trusty
 latex: false
-fortran: false
 r_build_args: '--no-manual'
 
 r_github_packages:
