@@ -2,7 +2,7 @@
 growthform: a versioned lookup table for the growth form of vascular plants
 ===========================================================================
 
-[![Build Status](https://travis-ci.org/traitecoevo/growthform.png?branch=master)](https://travis-ci.org/traitecoevo/taxonlookup) [![codecov.io](https://codecov.io/github/traitecoevo/growthform/coverage.svg?branch=master)](https://codecov.io/github/traitecoevo/growthform?branch=master)
+[![Build Status](https://travis-ci.org/traitecoevo/growthform.png?branch=master)](https://travis-ci.org/traitecoevo/taxonlookup) [![codecov.io](https://codecov.io/github/traitecoevo/growthform/coverage.svg?branch=master)](https://codecov.io/github/traitecoevo/growthform?branch=master) [![DOI](https://zenodo.org/badge/161406874.svg)](https://zenodo.org/badge/latestdoi/161406874)
 
 **Problem:** You have a list of species from anywhere in the world. You've fixed the names, but you'd like to know something about the species' growth forms.
 
