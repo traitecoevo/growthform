@@ -2,7 +2,7 @@
 growthform: a versioned lookup table for the growth form of vascular plants
 ===========================================================================
 
-[![Build Status](https://travis-ci.org/traitecoevo/growthform.png?branch=master)](https://travis-ci.org/traitecoevo/taxonlookup) [![codecov.io](https://codecov.io/github/traitecoevo/growthform/coverage.svg?branch=master)](https://codecov.io/github/traitecoevo/growthform?branch=master) [![GitHub version](https://badge.fury.io/gh/traitecoevo%2Fgrowthform.svg)](https://badge.fury.io/gh/traitecoevo%2Fgrowthform)
+[![Build Status](https://travis-ci.org/traitecoevo/growthform.png?branch=master)](https://travis-ci.org/traitecoevo/taxonlookup) [![codecov.io](https://codecov.io/github/traitecoevo/growthform/coverage.svg?branch=master)](https://codecov.io/github/traitecoevo/growthform?branch=master)
 
 **Problem:** You have a list of species from anywhere in the world. You've fixed the names, but you'd like to know something about the species' growth forms.
 
@@ -71,7 +71,7 @@ If you find something to correct or a new amazing dataset to add to this, please
 If you are publishing a paper with this library, or you want the results of your analysis to be reproducible for any other reason, include the version number in your call to lookup table. This will always pull the specific version of the taxonomy lookup that you used. If you leave this out, on a new machine the library will download the most recent version of the database rather than the specific one that you used.
 
 ``` r
-growth_form_lookup_table(c("Acacia longifolia", "Quercus agrifolia"),version="0.2.1")
+growth_form_lookup_table(c("Acacia longifolia", "Quercus agrifolia"),version="0.2.3")
 ```
 
     ##                  sp support woodiness nfixing
@@ -114,7 +114,7 @@ To get the version number of the dataset run:
 growth_form_version_current_local()
 ```
 
-    ## [1] "0.2.1"
+    ## [1] "0.2.3"
 
 For the most current version on Github run:
 
@@ -122,7 +122,7 @@ For the most current version on Github run:
 growth_form_version_current_github()
 ```
 
-    ## [1] "0.2.2"
+    ## [1] "0.2.3"
 
 For most uses, the latest release should be sufficient, and this is all that is necessary to use the data.
 
