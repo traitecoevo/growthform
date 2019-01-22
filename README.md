@@ -122,7 +122,7 @@ For the most current version on Github run:
 growth_form_version_current_github()
 ```
 
-    ## [1] "0.2.1"
+    ## [1] "0.2.2"
 
 For most uses, the latest release should be sufficient, and this is all that is necessary to use the data.
 
