@@ -11,7 +11,7 @@ output: github_document
 
 **Problem:** You have a list of species from anywhere in the world.  You've fixed the names, but you'd like to know something about the species' growth forms.  
 
-**Solution:** We've put together a growing list of growth forms, currently (>140,000 species).  This list lives in this github repository.  If you want the whole list, head to [releases and download the whole thing](https://github.com/traitecoevo/growthform/releases).  If you want the ones that correspond to your list, load your list into R and follow the steps below.  This package combines three seperate giant database assembly efforts to build large lists of plant growth forms.  
+**Solution:** We've put together a growing list of growth forms, currently (&gt;140,000 species). This list lives in this github repository. If you want the whole list, head to [our github releases tab and download the whole thing](https://github.com/traitecoevo/growthform/releases). If you want the ones that correspond to your list, load your list into R and follow the steps below. This package combines three separate giant database assembly efforts to build large lists of plant growth forms (see sources below).
 
 ## How to use this package
 
@@ -21,6 +21,11 @@ output: github_document
 #install.packages("devtools") # if necessary
 devtools::install_github("ropenscilabs/datastorr")
 devtools::install_github("traitecoevo/growthform")
+```
+
+### Load the growthform package
+
+```{r}
 library(growthform)
 ```
 
