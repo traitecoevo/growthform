@@ -17,7 +17,7 @@ output: github_document
 
 ### Install the required packages
 
-```{r, message=FALSE}
+```{r, message=FALSE,results=FALSE}
 #install.packages("devtools") # if necessary
 devtools::install_github("ropenscilabs/datastorr")
 devtools::install_github("traitecoevo/growthform")
