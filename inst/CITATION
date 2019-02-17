@@ -1,0 +1,10 @@
+citHeader("To cite growthform data in publications, please use:")
+
+citEntry(entry = "Article",
+  author = "G. Taseski and C. J. Beloe and R. V. Gallagher and J. Y. Chan and R. L. Dalrymple and W. K. Cornwell",
+  title = "A global growth form database for 143,616 vascular plant species",
+  year = "2018",
+  journal = "Ecology",
+  url = "https://doi.org/10.1002/ecy.2614",
+  textVersion = "Taseski, G. , Beloe, C. J., Gallagher, R. V., Chan, J. Y., Dalrymple, R. L. and Cornwell, W. K. (2019), A global growth form database for 143,616 vascular plant species. Ecology. Accepted Author Manuscript. https://doi.org/10.1002/ecy.2614"
+)
